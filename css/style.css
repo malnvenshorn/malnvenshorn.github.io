@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 100%;
+  color: #eee;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #111;
+    height: 100%;
+}
+
+a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.icon {
+    display: block;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: #000;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+.mail {
+    font-size: 20px;
+}
+
+.github {
+    font-size: 24px;
+}
+
+.fill {
+    height: 100%;
+}
+
+.home-container {
+    text-align: center;
+    height: 100%;
+}
+
+.home-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.name {
+    font-size: 2.15em;
+}
+
+.profession {
+    font-size: 1.15em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+footer .linklist {
+    padding: 1.5em;
+    border-top: 1px solid rgba(215,215,215,0.2);
+    display: inline-block;
+}
+
+footer .linklist a:not(:last-child) {
+    margin-right: 1em;
+}
