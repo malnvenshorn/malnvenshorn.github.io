@@ -32,15 +32,6 @@ a.icon {
     color: #000;
     border-radius: 50%;
     text-decoration: none;
-    margin: 0 40px;
-}
-
-.mail {
-    font-size: 20px;
-}
-
-.github {
-    font-size: 24px;
 }
 
 .fill {
@@ -72,13 +63,41 @@ a.icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
-.home-content img {
+.mail {
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.github {
+    font-size: 24px;
+    margin-right: 40px;
+}
+
+.profile img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+@media all and (max-width: 500px) {
+    .profile {
+        flex-flow: column wrap;
+    }
+    .profile img {
+        order: 1;
+    }
+    .github {
+        order: 2;
+        margin-top: 20px;
+        margin-right: 60px;
+    }
+    .mail {
+        order: 2;
+        margin-top: -40px;
+        margin-left: 60px;
+    }
 }
 
 footer {
